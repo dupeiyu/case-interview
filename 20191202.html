@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function fn(arg1, arg2) {
+				console.log(arg1, arg2);
+				arguments[0] = "duyi";
+				arg2 = "web";
+				console.log(arg1);
+				console.log(arguments[1]);
+			}
+			fn("html", "css");
+		</script>
+	</body>
+</html>

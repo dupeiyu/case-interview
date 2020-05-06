@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var name = "window";
+			var person = {
+				name: "邓小宝",
+				sayName: function() {
+					console.log(this.name);
+				}
+			};
+			var animal = {
+				name: "崽崽"
+			};
+			person.sayName();
+			person.sayName.call(animal);
+			person.sayName.apply(window);
+		</script>
+	</body>
+</html>
