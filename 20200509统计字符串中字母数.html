@@ -6,5 +6,16 @@
 	</head>
 	<body>
 		<p>统计字符串“aaaabbbccccdfgh”中字母个数或统计最多字母数</p>
+		<script type="text/javascript">
+			Array.from(new Set( str.split("")))
+			var str = "aaaabbbccccdfgh"
+			var arr = []
+			for(var i in str){
+				if(arr.indexOf(str[i]) == -1){
+					arr.push(str[i])
+				}
+			}
+			console.log(arr)
+		</script>
 	</body>
 </html>
