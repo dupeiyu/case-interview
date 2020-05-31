@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 以下代码的执行结果是什么,为什么？
+			function setValue() {
+				var p1 = p2 = {};
+				p1.name = "duyi";
+				p2.value = "web";
+				console.log(p2.name, p1.value);
+			}
+			setValue();
+			console.log(typeof p1); //(访问不到局部变量)
+			console.log(typeof p2);
+		</script>
+	</body>
+</html>
