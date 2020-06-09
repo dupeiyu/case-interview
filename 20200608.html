@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 下面代码输出什么？为什么？
+			varb = 1;
+
+			function outer() {
+				var b = 2
+
+				function inner() {
+					b++;
+					var b = 3;
+					console.log(b)
+				}
+				inner();
+			}
+			outer();
+		</script>
+	</body>
+</html>
